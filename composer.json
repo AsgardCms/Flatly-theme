@@ -1,6 +1,6 @@
 {
   "name": "asgard/demo-theme",
-  "type": "october-theme",
+  "type": "asgard-theme",
   "description": "Testing asgard theme",
   "keywords": [],
   "license": "MIT",
@@ -13,6 +13,7 @@
   ],
   "require": {
     "php": ">=5.4",
-    "composer/installers": "~1.0"
-  }
+    "composer/installers": "dev-master"
+  },
+  "minimum-stability": "dev"
 }
