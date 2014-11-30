@@ -6,6 +6,6 @@ Projects | @parent
 
 @section('content')
 <div class="row">
-    <h1>ok?</h1>
+    <h1>Hello World!</h1>
 </div>
 @stop
