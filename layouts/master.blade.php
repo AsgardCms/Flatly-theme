@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="{{ App::getLocale() }}">
     <meta charset="UTF-8">
     @section('meta')
         <meta name="description" content="{{ Setting::get('core::site-description') }}" />
