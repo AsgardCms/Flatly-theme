@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="{{ App::getLocale() }}">
+<head lang="{{ LaravelLocalization::setLocale() }}">
     <meta charset="UTF-8">
     @section('meta')
         <meta name="description" content="{{ Setting::get('core::site-description') }}" />
