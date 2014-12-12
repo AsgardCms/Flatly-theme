@@ -11,7 +11,7 @@
     </title>
     <link rel="shortcut icon" href="{{ theme_url() }}/favicon.ico">
 
-    <?php if (App::environment() == 'development'): ?>
+    <?php if (App::environment() == 'local'): ?>
     <link rel="stylesheet" href="{{ theme_url() }}/css/dist/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="{{ theme_url() }}/css/prism.css">
     <link rel="stylesheet" href="{{ theme_url() }}/css/bootswatch.css">
@@ -28,7 +28,7 @@
 </div>
 @include('partials.footer')
 
-<?php if (App::environment() == 'development'): ?>
+<?php if (App::environment() == 'local'): ?>
 <script src="{{ theme_url() }}/js/dist/jquery.min.js"></script>
 <script src="{{ theme_url() }}/js/bootstrap.min.js"></script>
 <script src="{{ theme_url() }}/js/prism.js"></script>
