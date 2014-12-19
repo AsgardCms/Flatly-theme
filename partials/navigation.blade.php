@@ -9,9 +9,7 @@
             <a class="navbar-brand" href="{{ URL::to('/') }}">{{ Setting::get('core::site-name') }}</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li class=""><a href="{{ URL::to('/') }}">Home</a></li>
-            </ul>
+            {!! Menu::get('main') !!}
         </div>
     </div>
 </nav>
