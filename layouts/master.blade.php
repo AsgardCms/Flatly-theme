@@ -18,7 +18,6 @@
     <?php else: ?>
     <link rel="stylesheet" href="{{ theme_url() }}/css/dist/all.min.css">
     <?php endif; ?>
-    {!! Menu::style() !!}
 </head>
 <body>
 
