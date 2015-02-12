@@ -9,14 +9,14 @@
     <title>
         @section('title'){{ Setting::get('core::site-name') }}@show
     </title>
-    <link rel="shortcut icon" href="{{ theme_url() }}/favicon.ico">
+    <link rel="shortcut icon" href="themes/demo/favicon.ico">
 
     <?php if (App::environment() == 'local'): ?>
-    <link rel="stylesheet" href="{{ theme_url() }}/css/dist/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="{{ theme_url() }}/css/prism.css">
-    <link rel="stylesheet" href="{{ theme_url() }}/css/bootswatch.css">
+    {!! Theme::style('css/dist/bootstrap.min.css') !!}
+    {!! Theme::style('css/dist/prism.css') !!}
+    {!! Theme::style('css/dist/bootswatch.css') !!}
     <?php else: ?>
-    <link rel="stylesheet" href="{{ theme_url() }}/css/dist/all.min.css">
+    {!! Theme::style('css/dist/dist/all.min.css') !!}
     <?php endif; ?>
 </head>
 <body>
@@ -29,11 +29,11 @@
 @include('partials.footer')
 
 <?php if (App::environment() == 'local'): ?>
-<script src="{{ theme_url() }}/js/dist/jquery.min.js"></script>
-<script src="{{ theme_url() }}/js/bootstrap.min.js"></script>
-<script src="{{ theme_url() }}/js/prism.js"></script>
+{!! Theme::script('js/dist/jquery.min.js') !!}
+{!! Theme::script('js/bootstrap.min.js') !!}
+{!! Theme::script('js/prism.js') !!}
 <?php else: ?>
-<script src="{{ theme_url() }}/js/dist/all.min.js"></script>
+{!! Theme::script('js/dist/all.min.js') !!}
 <?php endif; ?>
 @yield('scripts')
 </body>
