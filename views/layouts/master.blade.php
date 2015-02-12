@@ -12,11 +12,9 @@
     <link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
 
     <?php if (App::environment() == 'local'): ?>
-    {!! Theme::style('css/dist/bootstrap.min.css') !!}
-    {!! Theme::style('css/dist/prism.css') !!}
-    {!! Theme::style('css/dist/bootswatch.css') !!}
+    {!! Theme::style('css/main.css') !!}
     <?php else: ?>
-    {!! Theme::style('css/dist/dist/all.min.css') !!}
+    {!! Theme::style('css/main.css') !!}
     <?php endif; ?>
 </head>
 <body>
@@ -29,11 +27,9 @@
 @include('partials.footer')
 
 <?php if (App::environment() == 'local'): ?>
-{!! Theme::script('js/dist/jquery.min.js') !!}
-{!! Theme::script('js/bootstrap.min.js') !!}
-{!! Theme::script('js/prism.js') !!}
+{!! Theme::script('js/all.js') !!}
 <?php else: ?>
-{!! Theme::script('js/dist/all.min.js') !!}
+{!! Theme::script('js/all.js') !!}
 <?php endif; ?>
 @yield('scripts')
 </body>
