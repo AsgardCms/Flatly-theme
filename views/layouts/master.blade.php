@@ -9,7 +9,7 @@
     <title>
         @section('title'){{ Setting::get('core::site-name') }}@show
     </title>
-    <link rel="shortcut icon" href="themes/demo/favicon.ico">
+    <link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
 
     <?php if (App::environment() == 'local'): ?>
     {!! Theme::style('css/dist/bootstrap.min.css') !!}
