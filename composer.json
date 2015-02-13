@@ -19,10 +19,10 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "php artisan asgard:publish:theme Demo"
+      "php artisan stylist:publish"
     ],
     "post-update-cmd": [
-      "php artisan asgard:publish:theme Demo"
+      "php artisan stylist:publish"
     ]
   },
   "minimum-stability": "dev"
