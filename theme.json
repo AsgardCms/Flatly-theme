@@ -1,4 +1,5 @@
 {
   "name": "Demo",
-  "description": "This is a demonstration theme"
+  "description": "This is a demonstration theme",
+  "type": "frontend"
 }
