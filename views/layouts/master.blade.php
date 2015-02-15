@@ -11,11 +11,7 @@
     </title>
     <link rel="shortcut icon" href="{{ Theme::url('favicon.ico') }}">
 
-    <?php if (App::environment() == 'local'): ?>
     {!! Theme::style('css/main.css') !!}
-    <?php else: ?>
-    {!! Theme::style('css/main.css') !!}
-    <?php endif; ?>
 </head>
 <body>
 
@@ -26,11 +22,7 @@
 </div>
 @include('partials.footer')
 
-<?php if (App::environment() == 'local'): ?>
 {!! Theme::script('js/all.js') !!}
-<?php else: ?>
-{!! Theme::script('js/all.js') !!}
-<?php endif; ?>
 @yield('scripts')
 </body>
 </html>
