@@ -1,7 +1,7 @@
 {
-  "name": "asgardcms/demo-theme",
+  "name": "asgardcms/flatly-theme",
   "type": "asgard-theme",
-  "description": "An AsgardCMS demo theme",
+  "description": "An AsgardCMS Flatly bootswatch theme",
   "keywords": [
     "asgard-cms"
   ],
