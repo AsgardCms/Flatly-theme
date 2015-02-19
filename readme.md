@@ -5,7 +5,7 @@
 Add package to your `require` key in the `composer.json` file:
 
 ``` json
-"asgardcms/demo-theme": "dev-master"
+"asgardcms/flatly-theme": "dev-master"
 ```
 
 Followed by a composer update.
