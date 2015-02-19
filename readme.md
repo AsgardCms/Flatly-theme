@@ -1,4 +1,4 @@
-# AsgardCMS Demo theme
+# AsgardCMS Flatly theme
 
 ## Installation
 
