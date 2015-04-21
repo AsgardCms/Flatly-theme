@@ -39,7 +39,7 @@ elixir(function (mix) {
     mix.scripts([
         '/vendor/jquery/dist/jquery.js',
         '/vendor/bootstrap/dist/js/bootstrap.min.js',
-        '/vendor/prismjs/prism.js',
+        '/vendor/prism/prism.js',
         '/js/bootswatch.js'
     ], null, 'resources');
 
