@@ -14,6 +14,12 @@
         <span class="date">{{ $post->created_at->format('d-m-Y') }}</span>
 
         {!! $post->content !!}
+
+            <p>
+                <?php if ($post->present()->previous): ?>
+                    <a href="{{ route(locale() . '.blog.slug', [$post->present()->previous->slug]) }}">Previous</a>
+                <?php endif; ?>
+            </p>
         </div>
     </div>
 @stop
