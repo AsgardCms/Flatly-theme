@@ -16,8 +16,11 @@
         {!! $post->content !!}
 
             <p>
-                <?php if ($post->present()->previous): ?>
-                    <a href="{{ route(locale() . '.blog.slug', [$post->present()->previous->slug]) }}">Previous</a>
+                <?php if ($previous = $post->present()->previous): ?>
+                    <a href="{{ route(locale() . '.blog.slug', [$previous->slug]) }}">Previous</a>
+                <?php endif; ?>
+                <?php if ($next = $post->present()->next): ?>
+                    <a href="{{ route(locale() . '.blog.slug', [$next->slug]) }}">Next</a>
                 <?php endif; ?>
             </p>
         </div>
