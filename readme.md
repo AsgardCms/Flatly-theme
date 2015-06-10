@@ -2,12 +2,10 @@
 
 ## Installation
 
-Add package to your `require` key in the `composer.json` file:
+Execute the following command in your terminal:
 
 ``` json
-"asgardcms/flatly-theme": "dev-master"
+composer require asgardcms/flatly-theme
 ```
-
-Followed by a composer update.
 
 You'll find the theme in the `Themes/` directory.
