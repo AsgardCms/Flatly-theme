@@ -1,5 +1,6 @@
 {
   "name": "Flatly",
   "description": "This is the Flatly theme",
-  "type": "frontend"
+  "type": "frontend",
+  "version": "1.1.0"
 }
