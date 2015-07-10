@@ -1,0 +1,8 @@
+url: https://github.com/AsgardCms/Flatly-theme
+versions:
+    "1.1.0":
+        added:
+            - Changelog file
+    "1.0.0":
+        changed:
+            - Initial release
