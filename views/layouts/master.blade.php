@@ -26,7 +26,7 @@
 @yield('scripts')
 
 <?php if (Setting::has('core::google-analytics')): ?>
-    {{ Setting::get('core::google-analytics') }}
+    {!! Setting::get('core::google-analytics') !!}
 <?php endif; ?>
 </body>
 </html>
