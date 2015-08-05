@@ -1,5 +1,8 @@
 url: https://github.com/AsgardCms/Flatly-theme
 versions:
+    "1.1.1":
+        changed:
+            - Google analytics code not escaped anymore
     "1.1.0":
         added:
             - Changelog file
