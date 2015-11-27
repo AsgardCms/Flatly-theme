@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-black">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>
@@ -8,14 +8,14 @@
         @show
     </title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <link rel="stylesheet" href="{{ asset('themes/adminlte/css/vendor/bootstrap.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('themes/adminlte/css/vendor/font-awesome.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('themes/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('themes/adminlte/vendor/font-awesome/css/font-awesome.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('themes/adminlte/css/vendor/ionicons.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('themes/adminlte/css/vendor/alertify/alertify.core.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('themes/adminlte/css/vendor/datatables/dataTables.bootstrap.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('themes/adminlte/css/AdminLTE.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('themes/adminlte/vendor/admin-lte/dist/css/AdminLTE.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('themes/adminlte/vendor/admin-lte/plugins/iCheck/square/blue.css') }}"/>
 
-    <script src="{{ asset('themes/adminlte/js/vendor/jquery.min.js') }}"></script>
+    <script src="{{ asset('themes/adminlte/vendor/jquery/jquery.min.js') }}"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,14 +24,24 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="bg-black">
+<body class="hold-transition login-page">
 
-<div class="form-box" id="login-box">
+<div class="login-box">
     @yield('content')
 </div>
 
 <!-- Bootstrap -->
-<script src="{{ asset('themes/adminlte/js/vendor/bootstrap.min.js') }}"></script>
+<script src="{{ asset('themes/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('themes/adminlte/vendor/iCheck/icheck.min.js') }}"></script>
 <script src="{{ asset('themes/adminlte/js/vendor/alertify/alertify.js') }}"></script>
+<script>
+    $(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
 </body>
 </html>
